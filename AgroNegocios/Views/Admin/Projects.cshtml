@@ -1,0 +1,53 @@
+﻿@model List<AgroNegocios.DAL.Projects>
+@{
+    ViewBag.Title = "Projects";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="product-status" style="margin-top:80px;">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-10" style="margin-left: 50px;">
+                <div class="product-status-wrap table-responsive">
+                    <h4>פרויקטים</h4>
+                    <div class="add-product">
+                        <a href="@Url.Action("ProjectAddOrEdit", "Admin",new { ID = 0 })">הוסף פרויקט</a>
+                    </div>
+                    <table class="table">
+                        <tr>
+                            <th>אפשרויות</th>
+                            <th dir="rtl">תיאור פרויקט (ספרדית)</th>
+                            <th dir="rtl">תיאור פרויקט (אנגלית)</th>
+                            <th dir="rtl">כותרת פרויקט (ספרדית)</th>
+                            <th dir="rtl">כותרת פרויקט (אנגלית)</th>
+                            <th>תמונה</th>
+                        </tr>
+                        @for (int i = 0; i < Model.Count(); i++)
+                        {
+                            <tr>
+                                <td>
+                                    <button onclick="location.href='@Url.Action("ProjectDelete", "Admin", new { ID = Model.ElementAt(i).ID})'" data-toggle="tooltip" title="מחיקה" class="pd-setting-ed"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+                                    <button onclick="location.href='@Url.Action("ProjectAddOrEdit", "Admin", new { ID = Model.ElementAt(i).ID })'" data-toggle="tooltip" title="עריכה" class="pd-setting-ed"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
+                                </td>
+                                <td>@Model.ElementAt(i).DescriptionInSpanish</td>
+                                <td>@Model.ElementAt(i).Description</td>
+                                <td>@Model.ElementAt(i).TitleInSpanish</td>
+                                <td>@Model.ElementAt(i).Title</td>
+                                @if (Model.ElementAt(i).Picture == "")
+                                {
+                                    <td>
+                                        <span>אין תמונה</span>
+                                    </td>
+                                }
+                                else
+                                {
+                                    <td><img src="~/img/@Model.ElementAt(i).Picture" alt="" /></td>
+                                }
+                            </tr>
+                        }
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

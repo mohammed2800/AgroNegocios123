@@ -1,0 +1,232 @@
+﻿
+@using AgroNegocios.Resources
+
+@{
+    ViewBag.Title = HomeRes.ContactUs;
+}
+@Html.Raw(TempData["msg"])
+
+<!-- ##### Breadcrumb Area Start ##### -->
+<div class="breadcrumb-area bg-img bg-overlay jarallax" style="background-image: url('../../img/bg-img/18.jpg');">
+    <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-12">
+                <div class="breadcrumb-text">
+                    <h2>@HomeRes.ContactUs</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="famie-breadcrumb">
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="@Url.Action("Index","Home")"><i class="fa fa-home"></i> @HomeRes.Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">@HomeRes.ContactUs</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+<!-- ##### Breadcrumb Area End ##### -->
+<!-- ##### Contact Information Area Start ##### -->
+<section class="contact-info-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <!-- Section Heading -->
+                <div class="section-heading text-center">
+                    <h2><span>@HomeRes.TheBestWay</span> @HomeRes.ToContactUs</h2>
+                    <img src="~/img/core-img/decor2.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <!-- Single Information Area -->
+            <div class="col-12 col-md-4">
+                <div class="single-information-area text-center mb-100 wow fadeInUp" data-wow-delay="100ms">
+                    <div class="contact-icon">
+                        <i class="icon_pin_alt"></i>
+                    </div>
+                    <h5>@HomeRes.Address</h5>
+                    <h6>Baqa Al-Gharbiyya, Israel</h6>
+                </div>
+            </div>
+
+            <!-- Single Information Area -->
+            <div class="col-12 col-md-4">
+                <div class="single-information-area text-center mb-100 wow fadeInUp" data-wow-delay="500ms">
+                    <div class="contact-icon">
+                        <i class="icon_phone"></i>
+                    </div>
+                    <h5>@HomeRes.Phone</h5>
+                    <h6>+972 46382523</h6>
+                </div>
+            </div>
+
+            <!-- Single Information Area -->
+            <div class="col-12 col-md-4">
+                <div class="single-information-area text-center mb-100 wow fadeInUp" data-wow-delay="1000ms">
+                    <div class="contact-icon">
+                        <i class="icon_mail_alt"></i>
+                    </div>
+                    <h5>Email</h5>
+                    <h6>info@agro-negocios.net</h6>
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                <div class="contact-content mb-100">
+                    <div class="section-heading text-center">
+                        <p>Contact now</p>
+                        <h2><span>Get In Touch</span> With Us</h2>
+                        <img src="~/img/core-img/decor.png" alt="">
+                    </div>
+                    <div class="contact-form-area">
+                        @using (Html.BeginForm("sendContactMail", "Home"))
+                        {
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Name">
+                                    <input type="text" class="form-control" id="country" name="country" placeholder="Country">
+                                    <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone">
+                                </div>
+                                <div class="col-lg-6">
+                                    <textarea name="message" class="form-control" cols="30" rows="10" placeholder="Your Message" style="max-height:162px"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" id="sendContactMail" class="btn famie-btn">Send Message</button>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="c-border"></div>
+    </div>
+</section>
+<!-- ##### Contact Information Area End ##### -->
+
+<!-- ##### Contact Area End ##### -->
+<section class="contact-area bg-gray section-padding-100-0">
+    <div class="container">
+        <div class="row align-items-end">
+
+            <!-- Contact Content -->
+            <div class="col-12 col-lg-7">
+                <div class="contact-content section-padding-0-100">
+                    <!-- Section Heading -->
+                    <div class="section-heading">
+                        <h2><span>Start a</span> Partnership Program</h2>
+                        <img src="~/img/core-img/decor.png" alt="">
+                        <p>
+                            If you require additional information for your project, please fill in the form below:
+                        </p>
+                    </div>
+                    <!-- Contact Form Area -->
+                    <div class="contact-form-area">
+                        @using (Html.BeginForm("sendMail", "Home"))
+                        {
+                            <div class="row">
+
+                                <style>
+                                    .x {
+                                        margin-bottom: 10px;
+                                    }
+                                </style>
+
+                                <div class="col-12">
+                                    <h3>Project Questionnaire</h3>
+                                    <input type="text" class="x form-control" id="Country" name="Country" placeholder="Country" title="Country">
+                                    <input type="text" class="x form-control" id="CustomerName" name="CustomerName" placeholder="Name" title="Name">
+                                    <input type="text" class="x form-control" id="Telephone" name="Telephone" placeholder="Telephone" title="Telephone">
+                                    <input type="text" class="x form-control" name="FarmName" placeholder="Farm Name" title="Farm Name">
+                                    <input type="text" class="x form-control" name="Location" placeholder="Location" title="Location">
+                                    <input type="text" class="x form-control" name="Fax" placeholder="Fax" title="Fax">
+                                    <input type="text" class="x form-control" name="Email" placeholder="Email" title="Email">
+                                    <input type="text" class="x form-control" name="CropType" placeholder="Crop Type/s" title="Crop Type/s">
+                                </div>
+
+                                <div class="col-12">
+                                    <h3>Climate Data For Past 3 Years:</h3>
+                                    <input type="text" class="x form-control" name="MinimumTemperature" placeholder="Minimum Temperature (C)" title="Minimum Temperature (C)">
+                                    <input type="text" class="x form-control" name="MaximumTemperature" placeholder="Maximum Temperature (C)" title="Maximum Temperature (C)">
+                                    <input type="text" class="x form-control" name="MaximumHumidity" placeholder="Maximum Humidity" title="Maximum Humidity">
+                                    <input type="text" class="x form-control" name="MinimumHumidity" placeholder="Minimum Humidity" title="Minimum Humidity">
+                                    <input type="text" class="x form-control" name="MaximumWide" placeholder="Maximum Wide Speed" title="Maximum Wide Speed">
+                                    <input type="text" class="x form-control" name="AverageAnnual" placeholder="Average Annual Rainfall" title="Average Annual Rainfall">
+                                    <input type="text" class="x form-control" name="MaximumAverage" placeholder="Maximum Average Rainfall Per Hour" title="Maximum Average Rainfall Per Hour">
+                                    <input type="text" class="x form-control" name="Altitude" placeholder="Altitude" title="">
+                                </div>
+
+                                <div class="col-12">
+                                    <h3>Wholesale Prices:</h3>
+                                    <input type="text" class="x form-control" name="Tomatoes" placeholder="Tomatoes, Export Quality, Per Annum" title="Tomatoes, Export Quality, Per Annum">
+                                    <input type="text" class="x form-control" name="Peppers" placeholder="Peppers, Export Quality, Per Annum" title="Peppers, Export Quality, Per Annum">
+                                    <input type="text" class="x form-control" name="Cucumbers" placeholder="Cucumbers, Export Quality, Per Annum" title="Cucumbers, Export Quality, Per Annum">
+                                    <input type="text" class="x form-control" name="Strawberries" placeholder="Strawberries, Export Quality, Per Annum" title="Strawberries, Export Quality, Per Annum">
+                                    <input type="text" class="x form-control" name="Roses" placeholder="Roses, Export Quality, Per Annum" title="Roses, Export Quality, Per Annum">
+                                    <input type="text" class="x form-control" name="CostOfOffice" placeholder="Cost Of Office Building Including Service Room, etc. – Size 200 M2"
+                                           title="Cost Of Office Building Including Service Room, etc. – Size 200 M2">
+                                    <input type="text" class="x form-control" name="CostOfElectriCity" placeholder="Cost Of ElectriCity (1 KW)" title="Cost Of EerctruCcity (1 KW)">
+                                    <input type="text" class="x form-control" name="CostOfGas" placeholder="Cost Of Gas" title="Cost Of Gas">
+                                    <input type="text" class="x form-control" name="CostOfConcrete" placeholder="Cost Of Concrete" title="Cost Of Concrete">
+                                    <input type="text" class="x form-control" name="CostOfLabor" placeholder="Cost Of Labor" title="Cost Of Labor">
+                                    <input type="text" class="x form-control" name="CostOfEngineer" placeholder="Cost Of Local Engineer" title="Cost Of Local Engineer">
+                                    <input type="text" class="x form-control" name="CostOfAgronomist" placeholder="Cost Of Local Agronomist" title="Cost Of Local Agronomist">
+                                    <input type="text" class="x form-control" name="CostOfHouse" placeholder="Cost Of Packing House Including Concrete, 15 CM Floor Thickness, Height 6M, Size 80*80 – Total Area 6400 M2"
+                                           title="Cost Of Packing House Including Concrete, 15 CM Floor Thickness, Height 6M, Size 80*80 – Total Area 6400 M2">
+                                    <input type="text" class="x form-control" name="CostOfThreeTon" placeholder="Cost Of 3 Ton Forklift" title="Cost Of 3 Ton Forklift">
+                                    <input type="text" class="x form-control" name="CostOfHalfTon" placeholder="Cost Of 1.5 Ton Forklift" title="Cost Of 1.5 Ton Forklift">
+                                    <input type="text" class="x form-control" name="CostOfsubstrate" placeholder="Cost Of substrate, Cocopeat, Peat(M2)" title="Cost Of substrate, Cocopeat, Peat(M2)">
+                                    <input type="text" class="x form-control" name="CostOfTransportation" placeholder="Cost Of Transportation Truck-Cooling System Per 11 KM"
+                                           title="Cost Of Transportation Truck-Cooling System Per 11 KM">
+
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" id="sendMail" class="btn famie-btn">Send</button>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Maps -->
+            <div class="col-lg-5">
+                <div class="consaltant-thumbnail text-center">
+                    <img src="~/img/bg-img/25.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script src="~/Scripts/jquery-3.3.1.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#sendContactMail").on("click", function () {
+            var name = $("#name").val();
+            var phone = $("#phone").val();
+
+            if (name != "" && phone != "") {
+                alert('thank you for contacting us!');
+            }
+        });
+
+        $("#sendMail").on("click", function () {
+            var name = $("#CustomerName").val();
+            var phone = $("#Telephone").val();
+            var Country = $("#Country").val();
+
+            if (name != "" && phone != "" && Country != "") {
+                alert('thank you for contacting us!');
+            }
+        });
+    });
+</script>

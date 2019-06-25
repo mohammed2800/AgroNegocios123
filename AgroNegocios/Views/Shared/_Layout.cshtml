@@ -1,0 +1,169 @@
+﻿@using AgroNegocios.Resources
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/style.css" rel="stylesheet" />
+    <link type="text/css" href="~/Content/site/scss/hero.scss" rel="stylesheet/scss" />
+
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+
+    <!-- Preloader -->
+    <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- ##### Header Area Start ##### -->
+    <header class="header-area">
+        <!-- Navbar Area -->
+        <div class="famie-main-menu">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Menu -->
+                    <nav class="classy-navbar justify-content-between" id="famieNav">
+                        <!-- Nav Brand -->
+                        <a href="@Url.Action("Index","Home")" class="nav-brand"><img src="~/img/LOGO-011.png" alt=""></a>
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+                        <!-- Menu -->
+                        <div class="classy-menu">
+                            <!-- Close Button -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+                            <!-- Navbar Start -->
+                            <div class="classynav">
+                                <ul class="nav" id="nav">
+                                    <li id="Home"><a href="@Url.Action("Index","Home")">@HomeRes.Home</a></li>
+                                    <li id="About"><a href="@Url.Action("About","Home")">@HomeRes.AboutUs</a></li>
+                                    <li id="Projects"><a href="@Url.Action("Projects","Home")">@HomeRes.OurProjects</a></li>
+                                    <li id="WorkingMethods"><a href="@Url.Action("WorkingMethods","Home")">@HomeRes.WorkingMethods</a></li>
+                                    <li id="Contact"><a href="@Url.Action("Contact","Home")">@HomeRes.ContactUs</a></li>
+                                    <li id="lang">
+                                        <a href="#" id="attachNavActivation">Language <i class="fa fa-globe"></i></a>
+
+                                        <ul class="lan__ul">
+                                            <li><a href="#" onclick="ChangeLang('en')">English</a></li>
+                                            <li><a href="#" onclick="ChangeLang('es')">Español</a></li>
+                                        </ul>
+
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Navbar End -->
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ##### Header Area End ##### -->
+
+    @RenderBody()
+
+    <!-- ##### Footer Area Start ##### -->
+    <footer class="footer-area">
+        <div class="main-footer bg-img bg-overlay " style="background-image: url(/img/bg-img/3.jpg);">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-6">
+                        <div class="footer-widget mt-70 ml-50">
+                            @*<a href="@Url.Action("Index","Home")" class="foo-logo d-block mb-30"><img src="~/img/LOGO-011.png" width="250" alt=""></a>
+                                <p>AGRO-NEGOCIOS ltd Is a group of Israel's leading companies.</p>*@
+                            <div class="contact-info">
+                                <p><i class="fa fa-map-pin" aria-hidden="true"></i><span>Baqa Al-Gharbiyya, Israel</span></p>
+                                <p><i class="fa fa-envelope" aria-hidden="true"></i><span>info@agro-negocios.net</span></p>
+                                <p><i class="fa fa-phone" aria-hidden="true"></i><span>+972 46382523</span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="footer-widget mb-80 ml-50">
+                            <h5 class="widget-title">@HomeRes.QuickLinks</h5>
+                            <nav class="footer-widget-nav ">
+                                <ul>
+                                    <li><a href="@Url.Action("Index","Home")">@HomeRes.Home</a></li>
+                                    <li><a href="@Url.Action("About","Home")">@HomeRes.AboutUs</a></li>
+                                    <li><a href="@Url.Action("Projects","Home")">@HomeRes.OurProjects</a></li>
+                                    <li><a href="@Url.Action("WorkingMethods","Home")">@HomeRes.WorkingMethods</a></li>
+                                    <li><a href="@Url.Action("Contact","Home")">@HomeRes.ContactUs</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Copywrite Area  -->
+        <div class="copywrite-area">
+            <div class="container">
+                <div class="copywrite-text">
+                    <div class="row align-items-center">
+                        <div class="col-md-12">
+                            <p style="text-align:center">
+                                Copyright &copy;
+                                <script>document.write(new Date().getFullYear());</script> All rights reserved | Website developed & Designed by <a href="http://codit.co.il/" target="_blank"> CODIT</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ##### Footer Area End ##### -->
+
+    <script src="~/Scripts/site/jquery.min.js"></script>
+    <script src="~/Scripts/site/popper.min.js"></script>
+    <script src="~/Scripts/site/bootstrap.min.js"></script>
+    <script src="~/Scripts/site/owl.carousel.min.js"></script>
+    <script src="~/Scripts/site/classynav.js"></script>
+    <script src="~/Scripts/site/wow.min.js"></script>
+    <script src="~/Scripts/site/jquery.sticky.js"></script>
+    <script src="~/Scripts/site/jquery.magnific-popup.min.js"></script>
+    <script src="~/Scripts/site/jquery.scrollup.min.js"></script>
+    <script src="~/Scripts/site/jarallax.min.js"></script>
+    <script src="~/Scripts/site/jarallax-video.min.js"></script>
+    <script src="~/Scripts/site/active.js"></script>
+
+    @*@Scripts.Render("~/bundles/jquery")*@
+    @*@Scripts.Render("~/bundles/bootstrap")*@
+    @*@RenderSection("scripts", required: false)*@
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var loc = window.location.href;
+            var str = loc.split("/")[4];
+            if (str === undefined)
+                $("#Home").addClass("active");
+            else if (str.localeCompare("") === 0)
+                $("#Home").addClass("active");
+            else
+                $("#" + str).addClass("active");
+
+        });
+
+        var ChangeLang = (lang) => {
+            $.ajax({
+                type: 'POST',
+                url: '/Language/Change',
+                data: { 'lang': lang },
+                success: function (res) { location.reload(); }
+            });
+        }
+
+    </script>
+
+</body>
+</html>

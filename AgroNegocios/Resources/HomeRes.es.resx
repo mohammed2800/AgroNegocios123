@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AboutUs" xml:space="preserve">
+    <value>Quiénes somos</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>Dirección</value>
+  </data>
+  <data name="AgroStory" xml:space="preserve">
+    <value>AGRO-NEGOCIOS es un grupo de empresas líderes en Israel para el diseño, ingeniería, distribución e instalación de proyectos agrícolas en el mundo entero. La misión principal de AGRO-NEGOCIOS es desarrollar proyectos viables de infraestructuras agrícolas, acuicultura y ganadería, que mejoren la cantidad y calidad de la producción mundial.</value>
+  </data>
+  <data name="ContactUs" xml:space="preserve">
+    <value>Contacto</value>
+  </data>
+  <data name="Createjobs" xml:space="preserve">
+    <value>Crear trabajos</value>
+  </data>
+  <data name="CreatejobsDesc" xml:space="preserve">
+    <value>El personal local es entrenado y empleado</value>
+  </data>
+  <data name="ExactPlanning" xml:space="preserve">
+    <value>Planificación exacta</value>
+  </data>
+  <data name="FinancialSupport" xml:space="preserve">
+    <value>Apoyo Financiero</value>
+  </data>
+  <data name="FinancialSupportDesc" xml:space="preserve">
+    <value>Garantiza la solución más rentable, además del retorno de las inversiones y los resultados a largo plazo. Podemos ofrecer acuerdos de compra en algunas partes del mundo a algunos de nuestros productos.</value>
+  </data>
+  <data name="HighestStandards" xml:space="preserve">
+    <value>Los más altos estándares de</value>
+  </data>
+  <data name="HighestStandardsDesc" xml:space="preserve">
+    <value>Equipos, materiales, y construcciones.</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Inicio</value>
+  </data>
+  <data name="ImpactProjects" xml:space="preserve">
+    <value>Proyectos de impacto</value>
+  </data>
+  <data name="ImpactProjectsDesc" xml:space="preserve">
+    <value>Con más de 40 años de experiencia, traemos tecnología confiable probada en el campo, respaldada por experiencia profesional y conocimiento para proyectos agrícolas de grandes escalas.</value>
+  </data>
+  <data name="ImplementationAndSupport" xml:space="preserve">
+    <value>Implementación y Soporte</value>
+  </data>
+  <data name="ImplementationAndSupportDesc" xml:space="preserve">
+    <value>Un proyecto exitoso llega a su fin cuando el cliente tiene todos los conocimientos necesarios para continuar el proyecto con éxito. El soporte técnico y profesional estará disponible para el cliente durante todo el período del proyecto y más, si es necesario.</value>
+  </data>
+  <data name="Instructions" xml:space="preserve">
+    <value>Instrucciones</value>
+  </data>
+  <data name="InstructionsDesc" xml:space="preserve">
+    <value>La capacitación y la transferencia de conocimientos son claves para el éxito de cada proyecto. Se proporciona conocimiento relevante en los cursos OJT (de formación) y hasta la finalización de la implementación completa del proyecto.</value>
+  </data>
+  <data name="Integration" xml:space="preserve">
+    <value>Integración</value>
+  </data>
+  <data name="IntegrationDesc" xml:space="preserve">
+    <value>Diferentes proyectos requieren diferentes sistemas (riego, control de clima, tratamiento de agua, etc.). Nos aseguramos de que todos los sistemas estén informatizados, controlados e integrados a un sistema en funcionamiento.</value>
+  </data>
+  <data name="LetUs" xml:space="preserve">
+    <value>Déjanos</value>
+  </data>
+  <data name="Management" xml:space="preserve">
+    <value>Administración</value>
+  </data>
+  <data name="ManagementDesc" xml:space="preserve">
+    <value>Profesionales calificados que acompañan el proyecto desde su primer día y brindan una solución integral y holística para todas las necesidades.</value>
+  </data>
+  <data name="Map" xml:space="preserve">
+    <value>Mapa</value>
+  </data>
+  <data name="OurProjects" xml:space="preserve">
+    <value>Nuestros Proyectos</value>
+  </data>
+  <data name="OurVision" xml:space="preserve">
+    <value>Nuestra visión</value>
+  </data>
+  <data name="OurVisionDesc" xml:space="preserve">
+    <value>En el mundo de hoy, entendemos que la seguridad alimentaria, el agua limpia y la energía son complejas y diferentes en cada parte del mundo. Nuestro objetivo es encontrar la solución a medida para los desafíos que enfrentamos. Nuestra forma única de métodos integrados, sistemas innovadores y experiencia nos permite aprender cómo aumentar la productividad y mejorar las condiciones considerando todos los estados existentes y convirtiéndolo en historias de éxito.</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>Teléfono</value>
+  </data>
+  <data name="ProductDevelopments" xml:space="preserve">
+    <value>Desarrollo de productos</value>
+  </data>
+  <data name="QuickLinks" xml:space="preserve">
+    <value>Enlaces Rápidos</value>
+  </data>
+  <data name="ReadMore" xml:space="preserve">
+    <value>Lee mas</value>
+  </data>
+  <data name="ReduceEnergy" xml:space="preserve">
+    <value>Reducir la energía</value>
+  </data>
+  <data name="ReduceEnergyDesc" xml:space="preserve">
+    <value>Costos, productos químicos, reparaciones y mantenimiento</value>
+  </data>
+  <data name="Revenues" xml:space="preserve">
+    <value>Ingresos</value>
+  </data>
+  <data name="RevenuesDesc" xml:space="preserve">
+    <value>Aumentar la eficiencia comercial</value>
+  </data>
+  <data name="SustainableDevelopment" xml:space="preserve">
+    <value>Desarrollo sostenible</value>
+  </data>
+  <data name="SustainableDevelopmentDesc" xml:space="preserve">
+    <value>Cumplir con los objetivos de desarrollo humano y al mismo tiempo mantener la capacidad de los sistemas naturales a proporcionar.</value>
+  </data>
+  <data name="Technology" xml:space="preserve">
+    <value>Tecnología</value>
+  </data>
+  <data name="TechnologyDesc" xml:space="preserve">
+    <value>Suministro completo de sistemas, la mayoría de los sistemas son desarrollos internos, por lo que podemos realizar modificaciones, modelos de compromiso creativos y flexibles sobre la base de cada proyecto, para que cada proyecto reciba sus necesidades con precisión y nos permita aumentar la producción, reducir el desperdicio de agua, etc.</value>
+  </data>
+  <data name="TechnologyTransfer" xml:space="preserve">
+    <value>Transferencia tecnológica</value>
+  </data>
+  <data name="TellYouOurStory" xml:space="preserve">
+    <value>contarte nuestra historia</value>
+  </data>
+  <data name="TheBestWay" xml:space="preserve">
+    <value>La Mejor Manera</value>
+  </data>
+  <data name="ToContactUs" xml:space="preserve">
+    <value>de Contactarnos</value>
+  </data>
+  <data name="TrainingAndKnowledge" xml:space="preserve">
+    <value>Formación y Conocimiento</value>
+  </data>
+  <data name="TurnKeyProjects" xml:space="preserve">
+    <value>Proyectos Llave en Mano</value>
+  </data>
+  <data name="WorkingMethods" xml:space="preserve">
+    <value>Métodos de Trabajo</value>
+  </data>
+</root>

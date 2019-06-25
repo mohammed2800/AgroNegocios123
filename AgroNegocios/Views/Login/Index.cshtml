@@ -1,0 +1,68 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>login</title>
+
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/site/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Content/Login/icon-font.min.css" rel="stylesheet" />
+    <link href="~/Content/Login/util.css" rel="stylesheet" />
+    <link href="~/Content/Login/main.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="limiter">
+        <div class="container-login100" style="background-image: url('../../img/2-7.jpg');">
+            <div class="wrap-login100 p-t-30 p-b-50">
+                <span class="login100-form-title p-b-41">
+                    כניסה למערכת
+                </span>
+                <div class="login100-form validate-form p-b-33 p-t-5">
+                    @using (Html.BeginForm("Index", "Login"))
+                    {
+                        <div class="wrap-input100 validate-input" data-validate="שם משתמש חובה">
+                            <input class="input100" type="text" name="UserName" placeholder="שם משתמש">
+                            <span class="focus-input100" data-placeholder="&#xe82a;"></span>
+                        </div>
+
+                        <div class="wrap-input100 validate-input" data-validate="סיסמה חובה">
+                            <input class="input100" type="password" name="Password" placeholder="סיסמה">
+                            <span class="focus-input100" data-placeholder="&#xe80f;"></span>
+                        </div>
+
+                        <div class="container-login100-form-btn m-t-32">
+                            <button type="submit" class="login100-form-btn">
+                                כניסה
+                            </button>
+                        </div>
+                    }
+                    <div>
+                        <a href="@Url.Action("Index","Home")" style="position: relative;left: 15px;">חזרה לדף הראשי</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="~/Scripts/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="~/Scripts/Login/toastr.js"></script>
+    @if (TempData["succ"] != null && TempData["msg"] != null)
+    {
+        if ((bool)(TempData["succ"]))
+        {
+            <script type="text/javascript"> toastrSuccess('@TempData["msg"].ToString()'); </script>
+        }
+        else
+        {
+            <script type="text/javascript"> toastrError('@TempData["msg"].ToString()'); </script>
+        }
+    }
+    <script src="~/Scripts/Login/main.js"></script>
+</body>
+</html>

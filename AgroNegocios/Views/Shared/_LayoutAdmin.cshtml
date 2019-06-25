@@ -1,0 +1,190 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>דף ניהול</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    @*<link href="~/Content/admin/users.css" rel="stylesheet" />*@
+    
+    <!-- Google Fonts
+        ============================================ -->
+    <link href="https://fonts.googleapis.com/css?family=Play:400,700" rel="stylesheet">
+    <!-- Bootstrap CSS
+        ============================================ -->
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <!-- Bootstrap CSS
+        ============================================ -->
+    <link href="~/Content/font-awesome.min.css" rel="stylesheet" />
+    <!-- owl.carousel CSS
+        ============================================ -->
+    <!-- meanmenu icon CSS
+        ============================================ -->
+    <link href="~/Content/admin/meanmenu.min.css" rel="stylesheet" />
+    <!-- mCustomScrollbar CSS
+        ============================================ -->
+    <link href="~/Content/admin/jquery.mCustomScrollbar.min.css" rel="stylesheet" />
+    <!-- metisMenu CSS
+        ============================================ -->
+    <link href="~/Content/admin/metisMenu.min.css" rel="stylesheet" />
+    <link href="~/Content/admin/metisMenu-vertical.css" rel="stylesheet" />
+    <!-- style CSS
+        ============================================ -->
+    <link href="~/Content/admin/style.css" rel="stylesheet" />
+    <!-- responsive CSS
+        ============================================ -->
+    <link href="~/Content/admin/responsive.css" rel="stylesheet" />
+    <!-- modernizr JS
+        ============================================ -->
+    <script src="~/Scripts/modernizr-2.8.3.js"></script>
+</head>
+<body>
+    <div class="left-sidebar-pro">
+        <nav id="sidebar" class="">
+            <div class="sidebar-header">
+                <a href="@Url.Action("Index","Admin")"><img class="main-logo" src="~/img/AGRO.png" alt="" width="120" /></a>
+                <strong><img src="~/img/AGRO.png" alt="" /></strong>
+            </div>
+            <div class="left-custom-menu-adp-wrap comment-scrollbar" style="direction:rtl">
+                <nav class="sidebar-nav left-sidebar-menu-pro">
+                    <ul class="metismenu" id="menu1">
+                        <li class="active">
+                        <li>
+                            <a title="בית" href="@Url.Action("Index","Admin")">
+                                <i class="fa big-icon fa-bars icon-wrap" aria-hidden="true"></i> <span class="mini-sub-pro">&emsp;בית</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a title="פרויקטים" href="@Url.Action("Projects","Admin")">
+                                <i class="fa big-icon fa-th icon-wrap" aria-hidden="true"></i> <span class="mini-sub-pro">&emsp;פרויקטים</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a title="משתמשים" href="@Url.Action("Users","Admin")">
+                                <i class="fa big-icon fa-user icon-wrap" aria-hidden="true"></i> <span class="mini-sub-pro">&emsp;משתמשים</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a title="צוות" href="@Url.Action("Team","Admin")">
+                                <i class="fa big-icon fa-bars icon-wrap" aria-hidden="true"></i> <span class="mini-sub-pro">&emsp;צוות</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </nav>
+    </div>
+    <div class="all-content-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="logo-pro">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-advance-area">
+            <div class="header-top-area">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="header-top-wraper">
+                                <div class="row">
+
+                                    <div class="col-lg-2 col-md-5 col-sm-12 col-xs-12">
+                                        <div class="header-right-info">
+                                            <ul class="nav navbar-nav mai-top-nav header-right-menu">
+                                                <li class="nav-item">
+                                                    <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle">
+                                                        <i class="fa fa-user adminpro-user-rounded header-riht-inf" aria-hidden="true"></i>
+                                                        <i class="fa fa-angle-down adminpro-icon adminpro-down-arrow"></i>
+                                                    </a>
+                                                    <ul role="menu" class="dropdown-header-top author-log dropdown-menu animated zoomIn">
+                                                        <li>
+                                                            <a href="@Url.Action("Logout","Login")"><span class="fa fa-lock author-log-ic"></span>Log Out</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-10 col-md-0 col-sm-1 col-xs-12">
+                                        <div class="menu-switcher-pro">
+                                            <button type="button" id="sidebarCollapse" class="btn bar-button-pro header-drl-controller-btn btn-info navbar-btn">
+                                                <i class="fa fa-bars"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Mobile Menu start -->
+            <div class="mobile-menu-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="mobile-menu">
+                                <nav id="dropdown">
+                                    <ul class="mobile-menu-nav">
+                                        <li><a href="@Url.Action("Index","Admin")">בית</a></li>
+                                        <li><a href="@Url.Action("Projects","Admin")">פרויקטים</a></li>
+                                        <li><a href="@Url.Action("Users","Admin")">משתמשים</a></li>
+                                        <li><a href="@Url.Action("Team","Admin")">צוות</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Mobile Menu end -->
+        </div>
+    </div>
+
+    <div>
+        @RenderBody()
+    </div>
+
+    <!-- jquery
+       ============================================ -->
+    <script src="~/Scripts/jquery-3.3.1.min.js"></script>
+    <!-- bootstrap JS
+        ============================================ -->
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <!-- wow JS
+        ============================================ -->
+    <script src="~/Scripts/admin/wow.min.js"></script>
+    <!-- price-slider JS
+        ============================================ -->
+    <script src="~/Scripts/admin/jquery-price-slider.js"></script>
+    <!-- meanmenu JS
+        ============================================ -->
+    <script src="~/Scripts/admin/jquery.meanmenu.js"></script>
+    <!-- owl.carousel JS
+        ============================================ -->
+    <script src="~/Scripts/admin/owl.carousel.min.js"></script>
+    <!-- sticky JS
+        ============================================ -->
+    <script src="~/Scripts/admin/jquery.sticky.js"></script>
+    <!-- scrollUp JS
+        ============================================ -->
+    <script src="~/Scripts/admin/jquery.scrollUp.min.js"></script>
+    <!-- mCustomScrollbar JS
+        ============================================ -->
+    <script src="~/Scripts/admin/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="~/Scripts/admin/mCustomScrollbar-active.js"></script>
+    <!-- metisMenu JS
+        ============================================ -->
+    <script src="~/Scripts/admin/metisMenu.min.js"></script>
+    <script src="~/Scripts/admin/metisMenu-active.js"></script>
+
+    <!-- main JS
+        ============================================ -->
+    <script src="~/Scripts/admin/main.js"></script>
+</body>
+</html>

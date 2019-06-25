@@ -1,0 +1,432 @@
+﻿@model List<AgroNegocios.DAL.Projects>
+
+@using AgroNegocios.Resources
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="hero-area">
+    <video autoplay muted loop id="myVideo">
+        <source src="~/video/AGRO25.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+    @*<div class="welcome-slides owl-carousel">
+            @if (Model != null && Model.Count > 0)
+            {
+                for (int i = 0; i < Model.Count; i++)
+                {
+                    <div class="single-welcome-slides bg-img bg-overlay jarallax" style="background-image: url(../../img/@Model.ElementAt(i).Picture)">
+                        <div class="container h-100">
+                            <div class="row h-100 align-items-center">
+                                <div class="col-12 col-lg-10">
+                                    <div class="welcome-content">
+                                        <h2 data-animation="fadeInUp" data-delay="200ms">
+                                            @Model.ElementAt(i).Title
+                                        </h2>
+                                        <p data-animation="fadeInUp" data-delay="400ms" style="font-size: 18px;">
+                                            @Model.ElementAt(i).Description.
+                                        </p>
+                                        <a href="@Url.Action("Contact", "Home")" class="famie-btn mt-4" data-animation="bounceInUp" data-delay="600ms">Contact Us</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+        </div>*@
+</div>
+
+<section class="famie-benefits-area section-padding-100-0 pb-5">
+    <div class="container">
+        @*<div class="row">
+                <div class="col-12">
+                    <div class="benefits-thumbnail mb-50">
+                        <img src="~/img/bg-img/2.jpg" alt="">
+                    </div>
+                </div>
+            </div>*@
+
+        <div class="row justify-content-center">
+            <!-- Single Benefits Area -->
+            <div class="col-12 col-sm-4 col-lg">
+                <div class="single-benefits-area wow fadeInUp mb-50" data-wow-delay="100ms">
+                    <img src="~/img/core-img/digger.png" alt="">
+                    <h5>@HomeRes.TrainingAndKnowledge</h5>
+                </div>
+            </div>
+
+            <!-- Single Benefits Area -->
+            <div class="col-12 col-sm-4 col-lg">
+                <div class="single-benefits-area wow fadeInUp mb-50" data-wow-delay="300ms">
+                    <img src="~/img/core-img/windmill.png" alt="">
+                    <h5>@HomeRes.TurnKeyProjects</h5>
+                </div>
+            </div>
+
+            <!-- Single Benefits Area -->
+            <div class="col-12 col-sm-4 col-lg">
+                <div class="single-benefits-area wow fadeInUp mb-50" data-wow-delay="500ms">
+                    <img src="~/img/core-img/cereals.png" alt="">
+                    <h5>@HomeRes.ExactPlanning</h5>
+                </div>
+            </div>
+
+            <!-- Single Benefits Area -->
+            <div class="col-12 col-sm-4 col-lg">
+                <div class="single-benefits-area wow fadeInUp mb-50" data-wow-delay="700ms">
+                    <img src="~/img/core-img/tractor.png" alt="">
+                    <h5>@HomeRes.ProductDevelopments</h5>
+                </div>
+            </div>
+
+            <!-- Single Benefits Area -->
+            <div class="col-12 col-sm-4 col-lg">
+                <div class="single-benefits-area wow fadeInUp mb-50" data-wow-delay="900ms">
+                    <img src="~/img/core-img/sunrise.png" alt="">
+                    <h5>@HomeRes.TechnologyTransfer</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ##### About Us Area Start ##### -->
+<section class="about-us-area">
+    <div class="container">
+        <div class="row align-items-center">
+
+            <!-- About Us Content -->
+            <div class="col-12 col-md-8">
+                <div class="about-us-content mb-100">
+                    <!-- Section Heading -->
+                    <div class="section-heading">
+                        <p>@HomeRes.AboutUs</p>
+                        <h2><span>@HomeRes.LetUs</span> @HomeRes.TellYouOurStory</h2>
+                        <img src="~/img/core-img/decor.png" alt="">
+                    </div>
+                    <p>
+                       @HomeRes.AgroStory
+                    </p>
+                    <a href="@Url.Action("About","Home")" class="famie-btn mt-30">@HomeRes.ReadMore</a>
+                </div>
+            </div>
+
+            <!-- Famie Video Play -->
+            <div class="col-12 col-md-4">
+                <div class="famie-video-play mb-100">
+                    <img src="~/img/bg-img/6.jpg" alt="">
+                    <!-- Play Icon -->
+                    <a href="https://www.youtube.com/watch?v=GpUo7bPPvgw" class="play-icon"><i class="fa fa-play"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- ##### About Us Area End ##### -->
+<!-- ##### Services Area Start ##### -->
+<section class="services-area d-flex flex-wrap mb-100">
+    <!-- Service Thumbnail -->
+    <div class="services-thumbnail bg-img jarallax" style="background-image: url('../../img/TEST.jpeg');"></div>
+
+    <!-- Service Content -->
+    <div class="services-content section-padding-100-50 px-5">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Section Heading -->
+                    <div class="section-heading">
+                        <h2><span>@HomeRes.ImpactProjects</span></h2>
+                        <img src="~/img/core-img/decor.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 mb-50">
+                    <p>
+                        @HomeRes.ImpactProjectsDesc
+                    </p>
+                </div>
+
+                <!-- Single Service Area -->
+                <div class="col-12 col-lg-6">
+                    <div class="single-service-area mb-50 wow fadeInUp" data-wow-delay="100ms">
+                        <!-- Service Title -->
+                        <div class="service-title mb-3 d-flex align-items-center">
+                            <img src="~/img/A.png" width="40" height="50" alt="">
+                            <h5>@HomeRes.Createjobs</h5>
+                        </div>
+                        <p>@HomeRes.CreatejobsDesc</p>
+                    </div>
+                </div>
+
+                <!-- Single Service Area -->
+                <div class="col-12 col-lg-6">
+                    <div class="single-service-area mb-50 wow fadeInUp" data-wow-delay="300ms">
+                        <!-- Service Title -->
+                        <div class="service-title mb-3 d-flex align-items-center">
+                            <img src="~/img/A.png" width="40" height="50" alt="">
+                            <h5>@HomeRes.Revenues</h5>
+                        </div>
+                        <p>@HomeRes.RevenuesDesc</p>
+                    </div>
+                </div>
+
+                <!-- Single Service Area -->
+                <div class="col-12 col-lg-6">
+                    <div class="single-service-area mb-50 wow fadeInUp" data-wow-delay="500ms">
+                        <!-- Service Title -->
+                        <div class="service-title mb-3 d-flex align-items-center">
+                            <img src="~/img/A.png" width="40" height="50" alt="">
+                            <h5>@HomeRes.ReduceEnergy</h5>
+                        </div>
+                        <p>@HomeRes.ReduceEnergyDesc</p>
+                    </div>
+                </div>
+
+                <!-- Single Service Area -->
+                <div class="col-12 col-lg-6">
+                    <div class="single-service-area mb-50 wow fadeInUp" data-wow-delay="700ms">
+                        <!-- Service Title -->
+                        <div class="service-title mb-3 d-flex align-items-center">
+                            <img src="~/img/A.png" width="40" height="50" alt="">
+                            <h5>@HomeRes.HighestStandards</h5>
+                        </div>
+                        <p>@HomeRes.HighestStandardsDesc</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-12">
+                    <div class="single-service-area mb-50 wow fadeInUp" data-wow-delay="700ms">
+                        <!-- Service Title -->
+                        <div class="service-title mb-3 d-flex align-items-center">
+                            <img src="~/img/A.png" width="40" height="50" alt="">
+                            <h5>@HomeRes.SustainableDevelopment</h5>
+                        </div>
+                        <p>@HomeRes.SustainableDevelopmentDesc</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-12">
+                    <div class="single-service-area mb-50 wow fadeInUp" data-wow-delay="700ms">
+                        <!-- Service Title -->
+                        <div class="service-title mb-3 d-flex align-items-center">
+                            <img src="~/img/A.png" width="40" height="50" alt="">
+                            <h5>@HomeRes.OurVision</h5>
+                        </div>
+                        <p>@HomeRes.OurVisionDesc</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ##### Services Area End ##### -->
+<!-- ##### Newsletter Area Start ##### -->
+<section class="newsletter-area section-padding-100 bg-img bg-overlay jarallax" style="background-image: url('../../img/bg-img/3.jpg');">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-10">
+                <div class="newsletter-content">
+                    <!-- Section Heading -->
+                    <div class="section-heading text-center">
+                        <h2 style="color:white"><span>AGRO</span> NEGOCIOS</h2>
+                        <img src="~/img/core-img/decor2.png" alt="">
+                    </div>
+                    <p class="text-white mb-50 text-center" style="font-size: 16px;">
+                        @HomeRes.AgroStory
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- ##### Newsletter Area End ##### -->
+<!-- ##### WORKING METHODS Area Start ##### -->
+<section class="farming-practice-area section-padding-100-50">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <!-- Section Heading -->
+                <div class="section-heading text-center">
+                    <h2><span>@HomeRes.WorkingMethods</span></h2>
+                    <img src="~/img/core-img/decor2.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <!-- Single Farming Practice Area -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="single-farming-practice-area mb-50 wow fadeInUp" data-wow-delay="100ms">
+                    <!-- Thumbnail -->
+                    <div class="farming-practice-thumbnail">
+                        <img src="~/img/Technology.jpg" alt="" style="width:350px;height:250px">
+                    </div>
+                    <!-- Content -->
+                    <div class="farming-practice-content text-center">
+                        <!-- Icon -->
+                        <div class="farming-icon">
+                            <img src="~/img/core-img/sprout.png" alt="">
+                        </div>
+                        <h4>@HomeRes.Technology</h4>
+                        <p>@HomeRes.TechnologyDesc</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Single Farming Practice Area -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="single-farming-practice-area mb-50 wow fadeInUp" data-wow-delay="300ms">
+                    <!-- Thumbnail -->
+                    <div class="farming-practice-thumbnail">
+                        <img src="~/img/instruction.png" alt="" style="width:350px;height:250px">
+                    </div>
+                    <!-- Content -->
+                    <div class="farming-practice-content text-center">
+                        <!-- Icon -->
+                        <div class="farming-icon">
+                            <img src="~/img/core-img/sprout.png" alt="">
+                        </div>
+                        <h4>@HomeRes.Instructions</h4>
+                        <p>@HomeRes.InstructionsDesc</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Single Farming Practice Area -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="single-farming-practice-area mb-50 wow fadeInUp" data-wow-delay="500ms">
+                    <!-- Thumbnail -->
+                    <div class="farming-practice-thumbnail">
+                        <img src="~/img/Integration.png" alt="" style="width:350px;height:250px">
+                    </div>
+                    <!-- Content -->
+                    <div class="farming-practice-content text-center">
+                        <!-- Icon -->
+                        <div class="farming-icon">
+                            <img src="~/img/core-img/sprout.png" alt="">
+                        </div>
+                        <h4>@HomeRes.Integration</h4>
+                        <p>@HomeRes.IntegrationDesc</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Single Farming Practice Area -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="single-farming-practice-area mb-50 wow fadeInUp" data-wow-delay="300ms">
+                    <!-- Thumbnail -->
+                    <div class="farming-practice-thumbnail">
+                        <img src="~/img/get-support.jpg" alt="" style="width:350px;height:250px">
+                    </div>
+                    <!-- Content -->
+                    <div class="farming-practice-content text-center">
+                        <!-- Icon -->
+                        <div class="farming-icon">
+                            <img src="~/img/core-img/sprout.png" alt="">
+                        </div>
+                        <h4>@HomeRes.FinancialSupport</h4>
+                        <p>@HomeRes.FinancialSupportDesc</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Single Farming Practice Area -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="single-farming-practice-area mb-50 wow fadeInUp" data-wow-delay="100ms">
+                    <!-- Thumbnail -->
+                    <div class="farming-practice-thumbnail">
+                        <img src="~/img/implementation.png" alt="" style="width:350px;height:250px">
+                    </div>
+                    <!-- Content -->
+                    <div class="farming-practice-content text-center">
+                        <!-- Icon -->
+                        <div class="farming-icon">
+                            <img src="~/img/core-img/sprout.png" alt="">
+                        </div>
+                        <h4>@HomeRes.ImplementationAndSupport</h4>
+                        <p>@HomeRes.ImplementationAndSupportDesc</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Single Farming Practice Area -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="single-farming-practice-area mb-50 wow fadeInUp" data-wow-delay="500ms">
+                    <!-- Thumbnail -->
+                    <div class="farming-practice-thumbnail">
+                        <img src="~/img/managmentpng.png" alt="" style="width:350px;height:250px">
+                    </div>
+                    <!-- Content -->
+                    <div class="farming-practice-content text-center">
+                        <!-- Icon -->
+                        <div class="farming-icon">
+                            <img src="~/img/core-img/sprout.png" alt="">
+                        </div>
+                        <h4>@HomeRes.Management</h4>
+                        <p>@HomeRes.ManagementDesc</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<!-- ##### WORKING METHODS Area End ##### -->
+<!-- ##### Contact Area Start ##### -->
+@*<section class="contact-area section-padding-100-0">
+        <div class="container">
+            <div class="row justify-content-between">
+
+                <!-- Contact Content -->
+                <div class="col-12 col-lg-5">
+                    <div class="contact-content mb-100">
+                        <!-- Section Heading -->
+                        <div class="section-heading">
+                            <p>Contact now</p>
+                            <h2><span>Get In Touch</span> With Us</h2>
+                            <img src="~/img/core-img/decor.png" alt="">
+                        </div>
+                        <!-- Contact Form Area -->
+                        <div class="contact-form-area">
+                            <form action="index.html" method="post">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <input type="text" class="form-control" name="name" placeholder="Your Name">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <input type="email" class="form-control" name="email" placeholder="Your Email">
+                                    </div>
+                                    <div class="col-12">
+                                        <input type="text" class="form-control" name="subject" placeholder="Your Subject">
+                                    </div>
+                                    <div class="col-12">
+                                        <textarea name="message" class="form-control" cols="30" rows="10" placeholder="Your Message" style="max-height:188px"></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="btn famie-btn">Send Message</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Maps -->
+                <div class="col-lg-6">
+                    <div class="contact-maps mb-100">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28313.28917392649!2d-88.2740948914384!3d41.76219337461615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880efa1199df6109%3A0x8a1293b2ae8e0497!2sE+New+York+St%2C+Aurora%2C+IL%2C+USA!5e0!3m2!1sen!2sbd!4v1542893000723"
+                                allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>*@
+<!-- ##### Contact Area End ##### -->

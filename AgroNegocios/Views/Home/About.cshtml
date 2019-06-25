@@ -1,0 +1,247 @@
+﻿@model List<AgroNegocios.DAL.Team>
+
+@using AgroNegocios.Resources
+
+@{
+    ViewBag.Title = "About";
+}
+
+<!-- ##### Breadcrumb Area Start ##### -->
+<div class="breadcrumb-area bg-img bg-overlay jarallax" style="background-image: url('../../img/bg-img/18.jpg');">
+    <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-12">
+                <div class="breadcrumb-text">
+                    <h2>@HomeRes.AboutUs</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="famie-breadcrumb">
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="@Url.Action("Index","Home")"><i class="fa fa-home"></i> @HomeRes.Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">@HomeRes.AboutUs</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+<!-- ##### Breadcrumb Area End ##### -->
+
+<section class="about-us-area">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- About Us Content -->
+            <div class="col-12 col-md-8">
+                <div class="about-us-content mb-100">
+                    <!-- Section Heading -->
+                    <div class="section-heading">
+                        <p>@HomeRes.AboutUs</p>
+                        <h2><span>@HomeRes.LetUs</span> @HomeRes.TellYouOurStory</h2>
+                        <img src="~/img/core-img/decor.png" alt="">
+                    </div>
+                    <p>
+                        @HomeRes.AgroStory
+                    </p>
+                </div>
+            </div>
+
+            <!-- Famie Video Play -->
+            <div class="col-12 col-md-4">
+                <div class="famie-video-play mb-100">
+                    <img src="~/img/bg-img/6.jpg" alt="">
+                    <!-- Play Icon -->
+                    <a href="https://www.youtube.com/watch?v=GpUo7bPPvgw" class="play-icon"><i class="fa fa-play"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="famie-benefits-area pb-5">
+    <div class="container">
+        @*<div class="row">
+                <div class="col-12">
+                    <div class="benefits-thumbnail mb-50">
+                        <img src="~/img/bg-img/2.jpg" alt="">
+                    </div>
+                </div>
+            </div>*@
+
+        <div class="row justify-content-center">
+            <!-- Single Benefits Area -->
+            <div class="col-12 col-sm-4 col-lg">
+                <div class="single-benefits-area wow fadeInUp mb-50" data-wow-delay="100ms">
+                    <img src="~/img/core-img/digger.png" alt="">
+                    <h5>@HomeRes.TrainingAndKnowledge</h5>
+                </div>
+            </div>
+
+            <!-- Single Benefits Area -->
+            <div class="col-12 col-sm-4 col-lg">
+                <div class="single-benefits-area wow fadeInUp mb-50" data-wow-delay="300ms">
+                    <img src="~/img/core-img/windmill.png" alt="">
+                    <h5>@HomeRes.TurnKeyProjects</h5>
+                </div>
+            </div>
+
+            <!-- Single Benefits Area -->
+            <div class="col-12 col-sm-4 col-lg">
+                <div class="single-benefits-area wow fadeInUp mb-50" data-wow-delay="500ms">
+                    <img src="~/img/core-img/cereals.png" alt="">
+                    <h5>@HomeRes.ExactPlanning</h5>
+                </div>
+            </div>
+
+            <!-- Single Benefits Area -->
+            <div class="col-12 col-sm-4 col-lg">
+                <div class="single-benefits-area wow fadeInUp mb-50" data-wow-delay="700ms">
+                    <img src="~/img/core-img/tractor.png" alt="">
+                    <h5>@HomeRes.ProductDevelopments</h5>
+                </div>
+            </div>
+
+            <!-- Single Benefits Area -->
+            <div class="col-12 col-sm-4 col-lg">
+                <div class="single-benefits-area wow fadeInUp mb-50" data-wow-delay="900ms">
+                    <img src="~/img/core-img/sunrise.png" alt="">
+                    <h5>@HomeRes.TechnologyTransfer</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ##### About Us Area Start ##### -->
+<section class="about-us-area">
+    <div class="container">
+        <div class="row align-items-center">
+
+            <div class="col-12 col-md-8">
+                <div class="about-us-content mb-100">
+                    <div class="section-heading">
+                        <h2><span>@HomeRes.TrainingAndKnowledge </span></h2>
+                        <img src="~/img/core-img/decor2.png" alt="">
+                    </div>
+                    <p>
+                        @HomeRes.ImpactProjectsDesc
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="ml-50">
+                    <img src="~/img/tr.png" alt="" width="150">
+                </div>
+            </div>
+
+            <div class="col-12 col-md-8">
+                <div class="about-us-content mb-100">
+                    <div class="section-heading">
+                        <h2><span>@HomeRes.TurnKeyProjects </span></h2>
+                        <img src="~/img/core-img/decor2.png" alt="">
+                    </div>
+                    <p>
+                        AGRO-NEGOCIOS's Tern Key projects are complete production units that include, in a single location, all required facilities to assure production of seedlings, production of crops and storing high quality produce. The company’s mission is to provide customers and business partners with all means of production to enable them to get the best out of their investment in the shortest possible period.
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="ml-50">
+                    <img src="~/img/tern.png" alt="" width="150">
+                </div>
+            </div>
+
+            <div class="col-12 col-md-8">
+                <div class="about-us-content mb-100">
+                    <div class="section-heading">
+                        <h2><span>@HomeRes.ExactPlanning </span></h2>
+                        <img src="~/img/core-img/decor2.png" alt="">
+                    </div>
+                    <p>
+                        The company believes that successful projects start with exact planning and end with excellent performance in installation, technology transfer and on site follow up of each of the projects. AGRO-NEGOCIOS provides all means of success. We strive to provide customers with the means and knowledge to produce the highest quality possible products, while keeping the environment green and free of pollution.
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="ml-50">
+                    <img src="~/img/plannig.png" alt="" width="150">
+                </div>
+            </div>
+
+            <div class="col-12 col-md-8">
+                <div class="about-us-content mb-100">
+                    <div class="section-heading">
+                        <h2><span>@HomeRes.ProductDevelopments </span></h2>
+                        <img src="~/img/core-img/decor2.png" alt="">
+                    </div>
+                    <p>
+                        Most of the products in our projects are manufactured by us and therefore we make the required adjustments for each project according to the weather conditions, the type of land, the waters situation, etc. Each project is tailor made according to customer needs. Our experience enables maximum adjustment and changes in the composition of the project according to the problem, budget and the required result.
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="ml-50">
+                    <img src="~/img/dev.png" alt="" width="150">
+                </div>
+            </div>
+
+            <div class="col-12 col-md-8">
+                <div class="about-us-content mb-100">
+                    <div class="section-heading">
+                        <h2><span>@HomeRes.TechnologyTransfer </span></h2>
+                        <img src="~/img/core-img/decor2.png" alt="">
+                    </div>
+                    <p>
+                        AGRO-NEGOCIOS agronomists are skilled personnel with vast experience in modern agriculture and form a team known to be one of the best in the world. Our company’s expertise provides on demand consulting services worldwide. AGRO-NEGOCIOS expertise is in Vegetables cropping such as tomatoes, peppers, cherry tomatoes, edible Herbs, flowers, roses and strawberries which are world renowned and are considered as one of the company’s most important assets. AGRO-NEGOCIOS agronomists accompany all customers from the planning stage of their projects via installation and throughout the first cropping season. They transfer all required technology including cropping methodology to local agronomists. Each customer is connected to our company's main servers and data bases. consulting can be conducted via the Internet with experts around the globe.
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="ml-50">
+                    <img src="~/img/technology.png" alt="" width="150">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- ##### About Us Area End ##### -->
+<!-- ##### Team Member Area Start ##### -->
+@if (Model != null && Model.Count > 0)
+{
+    <section class="team-member-area section-padding-100-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Section Heading -->
+                    <div class="section-heading text-center">
+                        <p>MEET OUR TEAM</p>
+                        <h2><span>The Great Team</span> Will Always Help You</h2>
+                        <img src="~/img/core-img/decor2.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+
+                @for (int i = 0; i < Model.Count; i++)
+                {
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-team-member mb-100 wow fadeInUp" data-wow-delay="100ms">
+                        <div class="team-img">
+                            <img src="~/img/bg-img/@Model.ElementAt(i).image" alt="">
+                        </div>
+                        <div class="team-member-info">
+                            <h5>@Model.ElementAt(i).name</h5>
+                            <h6>@Model.ElementAt(i).role</h6>
+                        </div>
+                    </div>
+                </div>
+                }
+            </div>
+        </div>
+    </section>
+}
+<!-- ##### Team Member Area End ##### -->

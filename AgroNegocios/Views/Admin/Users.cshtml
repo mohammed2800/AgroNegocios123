@@ -1,0 +1,89 @@
+﻿@model List<AgroNegocios.DAL.Users>
+<link href="~/Content/admin/users.css" rel="stylesheet" />
+
+@{
+    ViewBag.Title = "Users";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="table-users text-center">
+    @*<div class="header">משתמשים</div>*@
+    <div class="header">
+        <span>משתמשים</span>
+        <a href="#" onclick="location.href='@Url.Action("UserAddOrEdit", "Admin", new { ID = 0 })'" style="float: right;color:white"><i class="fa fa-plus"></i></a>
+    </div>
+
+
+    <table cellspacing="0">
+        <tr>
+            <th class="text-center"> מחיקה </th>
+            <th class="text-center"> עריכה </th>
+            <th class="text-center"> סיסמה </th>
+            <th class="text-center"> שם משתמש </th>
+            <th class="text-center"> שם מלא </th>
+        </tr>
+
+        @if (Model != null && Model.Count > 0)
+        {
+            for (int i = 0; i < Model.Count; i++)
+            {
+                <tr>
+                    <td> <i onclick="location.href='@Url.Action("UserDelete", "Admin", new { ID = Model.ElementAt(i).ID })'" class="fa fa-close pntr" style="cursor:pointer"></i> </td>
+                    <td> <i onclick="location.href='@Url.Action("UserAddOrEdit", "Admin", new { ID = Model.ElementAt(i).ID })'" class="fa fa-pencil" style="cursor:pointer"></i> </td>
+                    <td> @Model.ElementAt(i).Password  </td>
+                    <td> @Model.ElementAt(i).UserName </td>
+                    <td> @Model.ElementAt(i).FullName</td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr> <td colspan="13"> אין עובדים כרגע </td> </tr>
+        }
+    </table>
+</div>
+
+
+
+@*<div class="first__row">
+        <div class="t_table">
+            <div>
+                <table>
+                    <tr class="title">
+                        <td>
+                            משתמשים
+                        </td>
+                        <td style="width:30px">
+                            <a href="#" onclick="location.href='@Url.Action("UserAddOrEdit", "Admin", new { ID = 0 })'"><i class="fa fa-plus"></i></a>
+                        </td>
+                    </tr>
+                </table>
+                <table style="box-shadow: 5px 6px 5px 5px rgba(0,0,0,.2);">
+                    <tr>
+                        <th> מחיקה </th>
+                        <th> עריכה </th>
+                        <th> סיסמה </th>
+                        <th> שם משתמש </th>
+                        <th> שם מלא </th>
+                    </tr>
+                    @if (Model != null && Model.Count > 0)
+                    {
+                        for (int i = 0; i < Model.Count; i++)
+                        {
+                            <tr>
+                                <td> <i onclick="location.href='@Url.Action("UserDelete", "Admin", new { ID = Model.ElementAt(i).ID })'" class="fa fa-close pntr" style="cursor:pointer"></i> </td>
+                                <td> <i onclick="location.href='@Url.Action("UserAddOrEdit", "Admin", new { ID = Model.ElementAt(i).ID })'" class="fa fa-pencil" style="cursor:pointer"></i> </td>
+                                <td> @Model.ElementAt(i).Password  </td>
+                                <td> @Model.ElementAt(i).UserName </td>
+                                <td> @Model.ElementAt(i).FullName</td>
+                            </tr>
+                        }
+                    }
+                    else
+                    {
+                        <tr> <td colspan="13"> אין עובדים כרגע </td> </tr>
+                    }
+                </table>
+            </div>
+        </div>
+    </div>*@
