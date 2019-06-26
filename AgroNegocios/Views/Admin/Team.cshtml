@@ -6,10 +6,18 @@
     Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
 }
 
+<style>
+    table img {
+        border-radius: 50%;
+        height: 60px;
+        width: 60px;
+    }
+</style>
+
 <div class="table-users text-center">
     <div class="header">
         <span>צוות</span>
-        <a href="#" onclick="location.href='@Url.Action("UserAddOrEdit", "Admin", new { ID = 0 })'" style="float: right;color:white"><i class="fa fa-plus"></i></a>
+        <a href="#" onclick="location.href='@Url.Action("TeamAddOrEdit", "Admin", new { ID = 0 })'" style="float: right;color:white"><i class="fa fa-plus"></i></a>
     </div>
 
     <table cellspacing="0">
