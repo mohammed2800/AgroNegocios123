@@ -1531,15 +1531,25 @@
     transform: translateY(40px);
 }
 
-#lang a:hover ~ .lan__ul, .lan__ul:hover {
-    visibility:visible;
-    background:#fff;
+#lang a:hover ~ .lan__ul, .lan__ul:hover, .lan__ul.active {
+    visibility: visible;
+    background: #fff;
 }
 
-.lan__ul li{
-    list-style:none;
+li#lang.active {
+    visibility: visible;
+    background: #fff;
 }
 
-.lan__ul li:hover{
-    box-shadow:0px 2px 5px rgba(0,0,0,.3);
+.lan__ul li {
+    list-style: none;
+}
+
+    .lan__ul li:hover {
+        box-shadow: 0px 2px 5px rgba(0,0,0,.3);
+    }
+
+.classy-nav-container a {
+    -webkit-transition-duration: unset !important;
+    transition-duration: unset !important;
 }

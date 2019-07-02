@@ -114,7 +114,7 @@
                         <div class="col-md-12">
                             <p style="text-align:center">
                                 Copyright &copy;
-                                <script>document.write(new Date().getFullYear());</script> All rights reserved | Website developed & Designed by <a href="http://codit.co.il/" target="_blank"> CODIT</a>
+                                <script>document.write(new Date().getFullYear());</script> All rights reserved | Website developed & Designed by <a href="http://doit10.com/" target="_blank"> Doit</a>
                             </p>
                         </div>
                     </div>
@@ -151,6 +151,10 @@
                 $("#Home").addClass("active");
             else
                 $("#" + str).addClass("active");
+
+            $('#attachNavActivation').click(() => {
+                $('.lan__ul').toggleClass('active');
+            });
 
         });
 

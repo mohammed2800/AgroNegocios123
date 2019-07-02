@@ -332,6 +332,7 @@
     <Content Include="fonts\fontawesome-webfont.woff2" />
     <Content Include="fonts\FontAwesome.otf" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile1.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -358,7 +359,6 @@
     <Content Include="Scripts\site\owl.carousel.min.js" />
     <Content Include="Scripts\site\popper.min.js" />
     <Content Include="Scripts\site\wow.min.js" />
-    <Content Include="video\AGRO25.mp4" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -388,6 +388,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+    <Folder Include="video\" />
     <Folder Include="Views\Language\" />
   </ItemGroup>
   <ItemGroup>

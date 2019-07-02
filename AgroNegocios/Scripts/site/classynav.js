@@ -66,7 +66,7 @@
             // adds toggle button to li items that have children
             classy_nav.find('li a').each(function () {
                 if ($(this).next().length > 0) {
-                    $(this).parent('li').addClass('has-down').append('<span class="dd-trigger"></span>');
+                    //$(this).parent('li').addClass('has-down').append('<span class="dd-trigger"></span>');
                 }
             });
 
