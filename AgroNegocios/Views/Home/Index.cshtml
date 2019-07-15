@@ -11,31 +11,6 @@
         <source src="~/video/AGRO25.mp4" type="video/mp4">
         Your browser does not support HTML5 video.
     </video>
-    @*<div class="welcome-slides owl-carousel">
-            @if (Model != null && Model.Count > 0)
-            {
-                for (int i = 0; i < Model.Count; i++)
-                {
-                    <div class="single-welcome-slides bg-img bg-overlay jarallax" style="background-image: url(../../img/@Model.ElementAt(i).Picture)">
-                        <div class="container h-100">
-                            <div class="row h-100 align-items-center">
-                                <div class="col-12 col-lg-10">
-                                    <div class="welcome-content">
-                                        <h2 data-animation="fadeInUp" data-delay="200ms">
-                                            @Model.ElementAt(i).Title
-                                        </h2>
-                                        <p data-animation="fadeInUp" data-delay="400ms" style="font-size: 18px;">
-                                            @Model.ElementAt(i).Description.
-                                        </p>
-                                        <a href="@Url.Action("Contact", "Home")" class="famie-btn mt-4" data-animation="bounceInUp" data-delay="600ms">Contact Us</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                }
-            }
-        </div>*@
 </div>
 
 <section class="famie-benefits-area section-padding-100-0 pb-5">
@@ -106,7 +81,7 @@
                         <img src="~/img/core-img/decor.png" alt="">
                     </div>
                     <p>
-                       @HomeRes.AgroStory
+                        @HomeRes.AgroStory
                     </p>
                     <a href="@Url.Action("About","Home")" class="famie-btn mt-30">@HomeRes.ReadMore</a>
                 </div>
@@ -117,7 +92,7 @@
                 <div class="famie-video-play mb-100">
                     <img src="~/img/bg-img/6.jpg" alt="">
                     <!-- Play Icon -->
-                    <a href="https://www.youtube.com/watch?v=GpUo7bPPvgw" class="play-icon"><i class="fa fa-play"></i></a>
+                    <a href="@HomeRes.Video" class="play-icon"><i class="fa fa-play"></i></a>
                 </div>
             </div>
 

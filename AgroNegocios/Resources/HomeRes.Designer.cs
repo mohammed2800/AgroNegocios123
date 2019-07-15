@@ -466,6 +466,15 @@ namespace AgroNegocios.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to https://www.youtube.com/watch?v=GpUo7bPPvgw.
+        /// </summary>
+        public static string Video {
+            get {
+                return ResourceManager.GetString("Video", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Working Methods.
         /// </summary>
         public static string WorkingMethods {

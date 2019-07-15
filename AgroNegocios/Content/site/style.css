@@ -1527,9 +1527,9 @@
     visibility: hidden;
 }
 
-#nav {
+/*#nav {
     transform: translateY(40px);
-}
+}*/
 
 #lang a:hover ~ .lan__ul, .lan__ul:hover, .lan__ul.active {
     visibility: visible;

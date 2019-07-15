@@ -5,9 +5,29 @@
 @{
     ViewBag.Title = HomeRes.OurProjects;
 }
-@*<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAudSqYRs2XxCQOn0pm0jI3IV6joJ9Qpfk"></script>*@
 
-<!-- ##### Breadcrumb Area Start ##### -->
+<style>
+    @@media screen and (min-width: 501px) {
+        #mapDesk {
+            display: block;
+        }
+
+        #mapMob {
+            display: none;
+        }
+    }
+
+    @@media screen and (max-width: 500px) {
+        #mapDesk {
+            display: none;
+        }
+
+        #mapMob {
+            display: block;
+        }
+    }
+</style>
+
 <div class="breadcrumb-area bg-img bg-overlay jarallax" style="background-image: url('../../img/bg-img/18.jpg');">
     <div class="container h-100">
         <div class="row h-100 align-items-center">
@@ -19,6 +39,7 @@
         </div>
     </div>
 </div>
+
 <div class="famie-breadcrumb">
     <div class="container">
         <nav aria-label="breadcrumb">
@@ -29,15 +50,14 @@
         </nav>
     </div>
 </div>
-<!-- ##### Breadcrumb Area End ##### -->
-<!-- ##### Our Products Area Start ##### -->
+
 <section class="our-products-area">
     <div class="container">
         <div class="row">
             <div class="col-12">
                 <!-- Section Heading -->
                 <div class="section-heading text-center">
-                    
+
                     <h2><span>@HomeRes.OurProjects</span></h2>
                     <img src="~/img/core-img/decor2.png" alt="">
                 </div>
@@ -45,8 +65,7 @@
         </div>
     </div>
 </section>
-<!-- ##### Our Products Area End ##### -->
-<!-- ##### About Us Area Start ##### -->
+
 <section class="about-us-area">
     <div class="container">
         <div class="row align-items-center">
@@ -54,9 +73,9 @@
             {
                 for (int i = 0; i < Model.Count; i++)
                 {
-                    var title = HomeRes.Home.ToLower().Equals("home") ? Model.ElementAt(i).Title 
+                    var title = HomeRes.Home.ToLower().Equals("home") ? Model.ElementAt(i).Title
                         : string.IsNullOrEmpty(Model.ElementAt(i).TitleInSpanish) ? Model.ElementAt(i).Title : Model.ElementAt(i).TitleInSpanish;
-                    var description = HomeRes.Home.ToLower().Equals("home") ? Model.ElementAt(i).Description 
+                    var description = HomeRes.Home.ToLower().Equals("home") ? Model.ElementAt(i).Description
                         : string.IsNullOrEmpty(Model.ElementAt(i).DescriptionInSpanish) ? Model.ElementAt(i).Description : Model.ElementAt(i).DescriptionInSpanish;
 
                     <div class="col-12 col-lg-6">
@@ -80,7 +99,6 @@
         </div>
     </div>
 </section>
-<!-- ##### About Us Area End ##### -->
 
 <section class="contact-area pt-30">
 
@@ -93,11 +111,16 @@
         </div>
     </div>
 
-    <div style="width:100%;height:600px">
-        <div id="GoogleMap"></div>
+    <div style="width:100%">
+        <img style="width:100%" id="mapDesk" src="~/img/Map_desk.png" />
+        <img style="width:100%" id="mapMob" src="~/img/Map_mobile.png" />
     </div>
+
+    @*<div style="width:100%;height:600px">
+            <div id="GoogleMap"></div>
+        </div>*@
 </section>
-<script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAudSqYRs2XxCQOn0pm0jI3IV6joJ9Qpfk&callback=initMap">
-</script>
-<script src="~/Scripts/site/map.js"></script>
+@*<script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAudSqYRs2XxCQOn0pm0jI3IV6joJ9Qpfk&callback=initMap">
+    </script>
+    <script src="~/Scripts/site/map.js"></script>*@

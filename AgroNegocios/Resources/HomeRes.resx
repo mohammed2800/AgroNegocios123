@@ -252,6 +252,9 @@
   <data name="TurnKeyProjects" xml:space="preserve">
     <value>Turn Key Projects</value>
   </data>
+  <data name="Video" xml:space="preserve">
+    <value>https://www.youtube.com/watch?v=GpUo7bPPvgw</value>
+  </data>
   <data name="WorkingMethods" xml:space="preserve">
     <value>Working Methods</value>
   </data>

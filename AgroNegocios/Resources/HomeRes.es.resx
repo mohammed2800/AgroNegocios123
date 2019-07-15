@@ -252,6 +252,9 @@
   <data name="TurnKeyProjects" xml:space="preserve">
     <value>Proyectos Llave en Mano</value>
   </data>
+  <data name="Video" xml:space="preserve">
+    <value>https://www.youtube.com/watch?v=upy0ZRkW--0</value>
+  </data>
   <data name="WorkingMethods" xml:space="preserve">
     <value>Métodos de Trabajo</value>
   </data>
