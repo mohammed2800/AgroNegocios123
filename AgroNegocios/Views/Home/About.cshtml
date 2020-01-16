@@ -48,14 +48,13 @@
                 </div>
             </div>
 
-            <!-- Famie Video Play -->
+            <!-- Famie Video Play
             <div class="col-12 col-md-4">
                 <div class="famie-video-play mb-100">
                     <img src="~/img/bg-img/6.jpg" alt="">
-                    <!-- Play Icon -->
                     <a href="@HomeRes.Video" class="play-icon"><i class="fa fa-play"></i></a>
                 </div>
-            </div>
+            </div>-->
         </div>
     </div>
 </section>
@@ -228,17 +227,17 @@
 
                 @for (int i = 0; i < Model.Count; i++)
                 {
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="single-team-member mb-100 wow fadeInUp" data-wow-delay="100ms">
-                        <div class="team-img">
-                            <img src="~/img/bg-img/@Model.ElementAt(i).image" alt="">
-                        </div>
-                        <div class="team-member-info">
-                            <h5>@Model.ElementAt(i).name</h5>
-                            <h6>@Model.ElementAt(i).role</h6>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="single-team-member mb-100 wow fadeInUp" data-wow-delay="100ms">
+                            <div class="team-img">
+                                <img src="~/img/bg-img/@Model.ElementAt(i).image" alt="">
+                            </div>
+                            <div class="team-member-info">
+                                <h5>@Model.ElementAt(i).name</h5>
+                                <h6>@Model.ElementAt(i).role</h6>
+                            </div>
                         </div>
                     </div>
-                </div>
                 }
             </div>
         </div>
