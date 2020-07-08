@@ -98,7 +98,7 @@ namespace AgroNegocios.Controllers
                 string CostOfTransportation = Request.Form["CostOfTransportation"];
 
                 var fromMail = new MailAddress("agro.negocios.official@gmail.com", "contact");
-                var toMail = new MailAddress("info@agro-negocios.net");
+                var toMail = new MailAddress("Maher.makalde@gmail.com");
                 var fromEmailPassword = "159753Asd";
                 var br = "</br>";
                 string subject = "contact us";
@@ -177,7 +177,7 @@ namespace AgroNegocios.Controllers
             else
             {
                 var fromMail = new MailAddress("agro.negocios.official@gmail.com", "contact");
-                var toMail = new MailAddress("info@agro-negocios.net");
+                var toMail = new MailAddress("Maher.makalde@gmail.com");
                 var fromEmailPassword = "159753Asd";
                 var br = "</br>";
                 string subject = "contact us";

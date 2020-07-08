@@ -79,7 +79,7 @@ namespace AgroNegocios.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to AGRO-NEGOCIOS ltd Is a group of Israel&apos;s leading companies for the design, engineering, distributing and installation of agriculture projects around the world. AGRO-NEGOCIOS primary mission is to develop economically viable agricultural and a Aquaculture and livestock infrastructure projects that enhance the quantity and quality of production around the world..
+        ///   Looks up a localized string similar to AGRO-NEGOCIOS(Makalde Group) ltd Is a group of Israel&apos;s leading companies for the design, engineering, distributing and installation of agriculture projects around the world. AGRO-NEGOCIOS(Makalde Group) primary mission is to develop economically viable agricultural and a Aquaculture and livestock infrastructure projects that enhance the quantity and quality of production around the world..
         /// </summary>
         public static string AgroStory {
             get {
