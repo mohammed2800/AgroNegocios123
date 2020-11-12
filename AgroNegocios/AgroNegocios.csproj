@@ -245,6 +245,7 @@
     <Content Include="img\A.png" />
     <Content Include="img\aaaa.jpg" />
     <Content Include="img\AGRO.png" />
+    <Content Include="img\agroWhite.png" />
     <Content Include="img\bg-img\1.jpg" />
     <Content Include="img\bg-img\15.jpg" />
     <Content Include="img\bg-img\16.jpg" />
@@ -287,6 +288,8 @@
     <Content Include="img\instruction.png" />
     <Content Include="img\Integration.png" />
     <Content Include="img\LOGO-011.png" />
+    <Content Include="img\Makalde.png" />
+    <Content Include="img\MakaldeWhite.png" />
     <Content Include="img\managmentpng.png" />
     <Content Include="img\Map_desk.png" />
     <Content Include="img\Map_mobile.png" />
